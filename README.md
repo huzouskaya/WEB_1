@@ -3,13 +3,11 @@
 
 This project implements a remote system backup system that allows users to backup files from one computer to another over a local network. The system consists of a client and a server, where the client initiates the backup process and the server provides the files to be backed up.
 
----
 Features
+---
 + Backup files from a remote computer to a local computer over a local network
 + Simple and efficient file transfer protocol
 + Easy to use and configure
-
-##### How does it work
 
 Client-Server Architecture
 ---
