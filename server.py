@@ -1,54 +1,40 @@
+# server.py
 from PyQt5.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QWidget, QLineEdit, QTextEdit, QLabel, QGraphicsPixmapItem
 from PyQt5.QtNetwork import QTcpServer, QHostAddress
 from PyQt5.QtCore import QDataStream, QByteArray, QIODevice, pyqtSlot
 from functools import partial
 import random
 from PyQt5.QtGui import QPixmap
-
-
-# Пожалуйста, убедитесь, что у вас есть модуль util с атрибутами ip и PORT.
 import util
 
-
-
-# Использование функции
-img = [
-    'img1.png', 'img2.png', 'img3.png', 'img4.jpg'
-]
+img = ['img1.png', 'img2.png', 'img3.png', 'img4.jpg']
 
 
 class ServerWindow(QMainWindow):
     def __init__(self):
         super(ServerWindow, self).__init__()
 
-        # Создаем центральный виджет и устанавливаем его
         central_widget = QWidget(self)
         self.setCentralWidget(central_widget)
 
-        # Создаем вертикальный layout
         self.layout = QVBoxLayout(central_widget)
 
-        # Создаем текстовые поля
         self.ip_le = QLineEdit(self)
         self.out_td = QTextEdit(self)
-        self.out_td.setReadOnly(True)  # Делает текстовое поле вывода только для чтения
+        self.out_td.setReadOnly(True)
         self.ip_le.setPlaceholderText(util.ip)
 
-        # Добавляем виджеты в layout
         self.layout.addWidget(self.ip_le)
         self.layout.addWidget(self.out_td)
 
         self.ip_le.setText(util.ip)
 
-        # Настраиваем сервер
         self.tcpserver = QTcpServer(self)
         self.tcpserver.listen(QHostAddress.Any, util.PORT)
         self.tcpserver.newConnection.connect(self.createConnection)
 
         self.image_label = QLabel(self)
         self.layout.addWidget(self.image_label)
-
-
 
     def createConnection(self):
         connection = self.tcpserver.nextPendingConnection()
@@ -73,10 +59,7 @@ class ServerWindow(QMainWindow):
             return
 
         textFromClient = stream.readQString()
-
-
         self.setProgress((textFromClient))
-
 
     def setProgress(self, value):
         if value == "отправить данные":
@@ -84,8 +67,6 @@ class ServerWindow(QMainWindow):
             pixmap = QPixmap(random_element)
             self.image_label.setPixmap(pixmap)
             self.image_label.setScaledContents(True)
-
-
 
 
 if __name__ == '__main__':
