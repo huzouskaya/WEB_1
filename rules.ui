@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="back">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>88</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Lato</family>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>BACK</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>731</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>C059</family>
+      <italic>true</italic>
+     </font>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'C059'; font-size:11pt; font-weight:400; font-style:italic;&quot;&gt;
+&lt;p align=&quot;right&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:16pt; font-weight:600;&quot;&gt;The Ultimate Guide to Checkers: Rules and Strategies&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:14pt;&quot;&gt;Welcome to the world of checkers, where the goal is to capture all of your opponent's pieces or block them so they cannot move. Sounds simple, right? Well, it's not as easy as it looks, folks! But don't worry, we've got you covered. Here are the rules, strategies, and some jokes to get you started.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:16pt; font-weight:600;&quot;&gt;The Basics&lt;/span&gt;&lt;/p&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; font-family:'Ubuntu'; font-size:16pt;&quot; align=&quot;right&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;The game is played on a 64-square board with 12 pieces (checkers) of each color.&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'Ubuntu'; font-size:14pt;&quot; align=&quot;right&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The pieces can only move forward, but they can capture an opponent's piece by jumping over it to an empty square.&lt;/li&gt;
+&lt;li style=&quot; font-family:'Ubuntu'; font-size:14pt;&quot; align=&quot;right&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The game starts with each player having 12 pieces on the dark squares of their side of the board.&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;right&quot; style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:16pt; font-weight:600;&quot;&gt;The Rules&lt;/span&gt;&lt;/p&gt;
+&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; font-family:'Ubuntu'; font-size:16pt;&quot; align=&quot;right&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;The King Me Rule: When a piece reaches the opposite side of the board, it becomes a king. This is like a promotion to the royal family, but without the fancy crown.&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-family:'Ubuntu'; font-size:14pt;&quot; align=&quot;right&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The Capture Rule: If a piece can capture an opponent's piece, it must do so. This is like a game of tag, but with checkers.&lt;/li&gt;
+&lt;li style=&quot; font-family:'Ubuntu'; font-size:14pt;&quot; align=&quot;right&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The Block Rule: If a piece is blocked by an opponent's piece, it cannot move. This is like being stuck in traffic, but without the honking horns.&lt;/li&gt;
+&lt;li style=&quot; font-family:'Ubuntu'; font-size:14pt;&quot; align=&quot;right&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The Jump Rule: A piece can only jump over an opponent's piece to an empty square. This is like a game of hopscotch, but with checkers.&lt;/li&gt;&lt;/ol&gt;
+&lt;p align=&quot;right&quot; style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:14pt; font-weight:600;&quot;&gt;Strategies&lt;/span&gt;&lt;/p&gt;
+&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; font-family:'Ubuntu'; font-size:14pt;&quot; align=&quot;right&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Control the Center: The center squares are the most important on the board. Try to control as many as you can to limit your opponent's movement.&lt;/li&gt;
+&lt;li style=&quot; font-family:'Ubuntu'; font-size:14pt;&quot; align=&quot;right&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Build a Prime: A prime is a row of checkers on the opponent's side of the board. Building a prime can help you capture more pieces and limit your opponent's movement.&lt;/li&gt;
+&lt;li style=&quot; font-family:'Ubuntu'; font-size:14pt;&quot; align=&quot;right&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Block Your Opponent: Try to block your opponent's pieces to limit their movement and create opportunities for capture.&lt;/li&gt;
+&lt;li style=&quot; font-family:'Ubuntu'; font-size:14pt;&quot; align=&quot;right&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Make a King: Try to get one of your pieces to the opposite side of the board to make a king. This will give you more mobility and capture power.&lt;/li&gt;&lt;/ol&gt;
+&lt;p align=&quot;right&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Ubuntu'; font-size:16pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:16pt; font-weight:600;&quot;&gt;Conclusion&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;right&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:14pt;&quot;&gt;Checkers is a game of strategy and skill, but it's also a game of fun and jokes. Remember to control the center, build a prime, block your opponent, and make a king. And most importantly, don't get too &amp;quot;blocked&amp;quot; or you'll be the one who's &amp;quot;jumping&amp;quot; out of the game!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
