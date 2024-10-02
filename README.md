@@ -32,8 +32,3 @@ Contributing:
 ---
 
 If you're feeling brave, you can try to contribute to the game by fixing bugs or adding new features. Just be warned: our code is still a work in progress, and we may have made some... interesting choices.
-
-License:
----
-
-This game is licensed under the MIT License, which means you can use it, modify it, and distribute it as you see fit. Just don't blame us if it breaks.
