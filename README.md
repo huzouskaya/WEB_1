@@ -27,9 +27,3 @@ Players can select pieces by clicking on them and then click on valid move locat
 
 ## Assets
 The game uses images for the chessboard and pieces, which are loaded and scaled for display. Ensure that the assets are in the correct directory structure.
-
-## Contributing
-Contributions are welcome! Please submit a pull request or open an issue for any suggestions or improvements.
-
-## License
-This project is licensed under the MIT License.
