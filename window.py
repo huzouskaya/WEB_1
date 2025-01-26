@@ -2,11 +2,14 @@ import os
 import time
 import pygame
 import tkinter as tk
+import logging  # Импортируем модуль логирования
 
 from client import Client
 from piece import get_piece
 from constants import BOARD_LENGTH, SCREEN_WIDTH, SCREEN_HEIGHT, SERVER_ADDR, FONT, TILE_LENGTH, WHITE, CAPTION, BLACK, RED
 
+# Настройка логирования
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def draw_start_menu(window: pygame.Surface, name: str, connection_lost: bool=False, connection_refused: bool=False) -> None:
     window.fill(BLACK)  # TODO: load bg image
@@ -65,8 +68,10 @@ def menu_screen(window: pygame.Surface, name: str, connection_lost: bool=False) 
                     draw_waiting(window)
                     try:
                         client = Client(name, SERVER_ADDR)
+                        logging.info(f"{name} подключается к серверу...")
                         chess_game(window, client)
                     except ConnectionRefusedError:
+                        logging.error("Соединение отклонено.")
                         draw_start_menu(window, name, connection_refused=True)
 
 def chess_game(window: pygame.Surface, client: Client) -> None:
@@ -89,6 +94,7 @@ def chess_game(window: pygame.Surface, client: Client) -> None:
                 command["my_name"] = client.name
                 board.command(command, window)
             except ConnectionResetError:  # connection closed
+                logging.warning("Соединение потеряно.")
                 menu_screen(window, client.name, connection_lost=True)
 
         for event in pygame.event.get():
