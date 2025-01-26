@@ -1,0 +1,14 @@
+
+code:
+    {
+        "command": <command>,
+        <**kwargs>
+    }
+
+examples:
+    {
+        "command": "move",
+        "p_name": "A",
+        "pos_before": (1, 1),
+        "pos_after": "(3, 3)
+    }
